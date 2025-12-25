@@ -1,0 +1,41 @@
+# Site Settings
+title: Denver Backflow Testing
+description: Professional backflow prevention testing, repair, and certification services in Denver and the Front Range. Coming soon from your trusted local irrigation experts.
+url: "https://denverbackflowtest.com"
+baseurl: ""
+
+# Business Info
+business:
+  name: Denver Backflow Testing
+  service_area: "Denver Metro & Front Range"
+  status: "Coming Soon"
+
+# Affiliate Sites
+affiliates:
+  - name: "5280 Sprinklers"
+    url: "https://5280sprinklers.com"
+    description: "Full-service sprinkler installation and repair"
+  - name: "Denver Sprinkler Blowout"
+    url: "https://denversprinklerblowout.com"
+    description: "Professional winterization services"
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+# Plugins (GitHub Pages supported)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

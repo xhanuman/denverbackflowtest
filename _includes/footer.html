@@ -1,0 +1,67 @@
+<footer class="site-footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C288,120 720,0 1440,64 L1440,120 L0,120 Z" fill="currentColor"/>
+    </svg>
+  </div>
+  
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="{{ '/' | relative_url }}" class="footer-logo">
+            <span class="logo-primary">Denver</span>
+            <span class="logo-secondary">Backflow Testing</span>
+          </a>
+          <p>Protecting Denver's water supply with professional backflow prevention testing, repair, and certification services.</p>
+          <p class="coming-soon-text">🚀 Service launching soon!</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="{{ '/services' | relative_url }}#testing">Annual Testing</a></li>
+            <li><a href="{{ '/services' | relative_url }}#repair">Repair Services</a></li>
+            <li><a href="{{ '/services' | relative_url }}#installation">New Installation</a></li>
+            <li><a href="{{ '/services' | relative_url }}#certification">Certification</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="{{ '/about' | relative_url }}">About Us</a></li>
+            <li><a href="{{ '/faq' | relative_url }}">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-affiliates">
+          <h4>Our Family of Services</h4>
+          <p class="affiliate-intro">Denver Backflow Testing is proudly affiliated with these trusted local irrigation specialists:</p>
+          <ul class="affiliate-list">
+            {% for affiliate in site.affiliates %}
+            <li>
+              <a href="{{ affiliate.url }}" target="_blank" rel="noopener" class="affiliate-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                  <polyline points="15 3 21 3 21 9"/>
+                  <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                {{ affiliate.name }}
+              </a>
+              <span class="affiliate-desc">{{ affiliate.description }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.business.name }}. All rights reserved.</p>
+      <p>Serving {{ site.business.service_area }}</p>
+    </div>
+  </div>
+</footer>
