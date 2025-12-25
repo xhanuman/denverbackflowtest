@@ -395,7 +395,6 @@ p {
 
 .hero-visual {
   position: relative;
-  margin-bottom: 40px;
 }
 
 .hero-card {
@@ -455,8 +454,8 @@ p {
 
 .hero-stats {
   position: absolute;
-  bottom: -30px;
-  left: -30px;
+  top: -20px;
+  right: -20px;
   background: var(--color-navy);
   color: var(--color-white);
   padding: var(--space-md);
