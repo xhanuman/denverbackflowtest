@@ -395,6 +395,7 @@ p {
 
 .hero-visual {
   position: relative;
+  margin-bottom: 40px;
 }
 
 .hero-card {
@@ -454,13 +455,14 @@ p {
 
 .hero-stats {
   position: absolute;
-  bottom: -20px;
-  left: -20px;
+  bottom: -30px;
+  left: -30px;
   background: var(--color-navy);
   color: var(--color-white);
   padding: var(--space-md);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
+  z-index: 10;
 }
 
 .hero-stats .stat-number {
@@ -992,7 +994,7 @@ p {
     position: relative;
     bottom: auto;
     left: auto;
-    margin-top: var(--space-md);
+    margin-top: var(--space-lg);
     display: inline-block;
   }
 
